@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>amz-AR</title>
+  <script src="aframe.min.js"></script>
+  <script src="aframe-ar.js"></script>
+  <script src="aframe-extras.min.js"></script>
+</head>
+
+<body>
+  <a-scene embedded arjs="debugUIEnabled: false; patternRatio: from 0 to 1">
+    <a-marker type="pattern" url="patt file path">
+      <a-entity position="0 0 0" rotation="0 0 0" scale="1 1 1" gltf-model="gltf file path"></a-entity><!-- no animation -->
+    </a-marker>
+    <a-marker type="pattern" url="2.patt">
+      <a-entity position="0 0 0" rotation="-90 0 0" scale="0.3 0.3 0.3" gltf-model="gltf file path"
+        animation-mixer="repetitions:Infinity"></a-entity>
+
+    </a-marker>
+    <a-entity camera></a-entity>
+  </a-scene>
+</body>
+
+</html>
